@@ -1,0 +1,33 @@
+.input {
+	width: 90%;
+	display: flex;
+	position: relative;
+	align-items: center;
+	margin: auto;
+
+	&__box {
+		width: 100%;
+		border-radius: 1.75rem;
+		padding: 1rem 1rem;
+		font-size: 1.5rem;
+		outline: none;
+
+	}
+
+	&__submit {
+		position: absolute;
+		right: 0.7rem;
+		padding: 0.75rem 1rem;
+		background: #002944;
+		color: white;
+		font-size: 1rem;
+		border-radius: 1.75rem;
+		cursor: pointer;
+		box-shadow: 0 0 5px -5px black;
+		transition: transform 0.15s ease-in-out;
+
+		&:active {
+			transform: scale(0.95);
+		}
+	}
+}

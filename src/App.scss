@@ -1,12 +1,11 @@
-main.taskdone {
-	header {
-		text-align: center;
+header {
+	text-align: center;
 
-		h1 {
-			font-family: 'Kalam', cursive;
-			text-transform: uppercase;
-			cursor: default;
-			user-select: none;
-		}
+	h1 {
+		font-family: 'Kalam', cursive;
+		text-transform: uppercase;
+		cursor: default;
+		user-select: none;
+		z-index: 1;
 	}
 }
