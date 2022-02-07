@@ -3,6 +3,7 @@ import './App.scss';
 
 // Reusable components
 import InputField from './components/InputField';
+import TodoList from './components/TodoList';
 
 // Models
 import { Todo } from './models/Todo';
@@ -26,6 +27,7 @@ const App: React.FC = () => {
 			</header>
 			<main className='taskdone'>
 				<InputField todo={todo} setTodo={setTodo} onAdd={AddHandler} />
+				<TodoList todos={todos} setTodos={setTodos}/>
 			</main>
 		</>
 	);
