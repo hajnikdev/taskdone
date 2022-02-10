@@ -1,5 +1,8 @@
 header {
+	position: relative;
 	text-align: center;
+	display: flex;
+	justify-content: center;
 
 	h1 {
 		font-family: 'Kalam', cursive;
@@ -7,5 +10,16 @@ header {
 		cursor: default;
 		user-select: none;
 		z-index: 1;
+	}
+
+	&::after {
+		width: calc(100% - 2rem);
+		max-width: 500px;
+		height: 0.1rem;
+		content: '';
+		position: absolute;
+		bottom: 1rem;
+		margin: 0 1rem;
+		background: white;
 	}
 }

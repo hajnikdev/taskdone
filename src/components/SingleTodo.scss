@@ -1,0 +1,46 @@
+.todo {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+    padding: 1rem;
+	background: rgba(255, 255, 255, 0.8);
+	color: #002944;
+	border-radius: 0.5rem;
+
+
+	&__textarea {
+		font-size: 1.25rem;
+		font-weight: bold;
+		font-family: 'Kalam', cursive;
+		margin-bottom: 0.5rem;
+		background: transparent;
+		border: none;
+		box-shadow: none;
+		resize: vertical;
+		outline: none;
+	}
+
+	&__text {
+		font-size: 1.25rem;
+		font-weight: bold;
+		font-family: 'Kalam', cursive;
+		margin-bottom: 0.5rem;
+	}
+
+	&__icons {
+		display: flex;
+		gap: 0.25rem;
+		align-self: flex-end;
+	}
+
+	&__icon {
+		font-size: 1.25rem;
+		cursor: pointer;
+		transition: transform 0.3s ease-in-out, margin 0.3s ease-in-out;
+
+		&:hover {
+			transform: scale(1.4);
+			margin: 0 0.5rem;
+		}
+	}
+}
